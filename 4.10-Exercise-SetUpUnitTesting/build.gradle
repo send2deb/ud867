@@ -8,6 +8,8 @@ Check out the build.gradle file in the app directory.
 
 buildscript {
     repositories {
+        google()
+        mavenCenter()
         jcenter()
     }
     dependencies {
@@ -21,5 +23,6 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        mavenCenter()
     }
 }

@@ -23,6 +23,7 @@ task putOnSocks {
 
 task putOnShoes {
     dependsOn "putOnSocks"
+    // mustRunAfter "takeShower"
     doLast {
         println "Putting on Shoes."
     }

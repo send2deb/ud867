@@ -1,6 +1,7 @@
 package com.udacity.gradle.flavorspecificactivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -42,13 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
 
-        Context context = this;
-        CharSequence text = this.getString(R.string.toast_text);
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-
-
+        Intent intent = new Intent(this, JokeActivity.class);
+        startActivity(intent);
     }
 }

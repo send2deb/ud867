@@ -76,7 +76,7 @@ argument, by default that argument is just called `it`.
 
 */
 
-myList.each{println "Compactly printing each list item: $it"}
+myList.each {println "Compactly printing each list item: $it"}
 
 /*
 

@@ -32,3 +32,13 @@ task printDependencies {
         configurations.compile.each { println it.name }
     }
 }
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'commons-io:commons-io:20030203.000550'
+	compile fileTree('libs')
+}
+

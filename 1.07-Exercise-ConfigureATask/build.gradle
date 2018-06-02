@@ -18,3 +18,17 @@ Hint: Don't forget about the solution file!
 https://docs.gradle.org/current/dsl/org.gradle.api.Task.html#org.gradle.api.Task:description
 
 */
+
+task hello {
+	description "This is hello task description"
+	group "This is hello task group"
+	
+	doFirst {
+		println "This is is doFirst action"
+	}
+
+	doLast {
+		println "This is doLast action"
+	}
+
+}
